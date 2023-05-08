@@ -1,0 +1,36 @@
+{
+  "name": "gptbot",
+  "version": "0.0.1",
+  "description": "Telegram bot to communicate with chatGPT",
+  "main": "./src/main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env NODE_ENV=production node ./src/main.js",
+    "dev": "cross-env NODE_ENV=development nodemon ./src/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Garou993/GPTbot.git"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "chatGPT"
+  ],
+  "author": "Garou993",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Garou993/GPTbot/issues"
+  },
+  "homepage": "https://github.com/Garou993/GPTbot#readme",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.22"
+  },
+  "dependencies": {
+    "config": "^3.3.9",
+    "openai": "^3.2.1",
+    "telegraf": "^4.12.2"
+  }
+}
